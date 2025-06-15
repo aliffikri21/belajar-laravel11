@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+
+    <link rel="stylesheet" href="{{ asset('build/assets/app.css') }}">
+    <script src="{{ asset('build/assets/app.js') }}" defer></script>
+
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
     {{-- Alpine JS --}}
